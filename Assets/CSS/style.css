@@ -1,5 +1,10 @@
-.navbar.navbar.expand-lg.bg-Secondary{
+.navbar.navbar-expand-lg.bg-secondary{
     background: rgb(133,251,63);
     background: radial-gradient(circle, rgba(133,251,63,1) 8%, rgba(250,214,65,1) 17%, rgba(243,126,80,1) 55%, rgba(252,70,101,1) 100%);
     }
-
+    i.fa-brands.fa-instagram.fa-2xl:hover{
+    color: blueviolet;
+    }
+.list-group{
+ --bs-list-group-bg: transparent;
+}
