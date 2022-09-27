@@ -1,3 +1,14 @@
+body {
+    margin : 0;
+    padding : 0;
+    font-family: sans-serif;
+    background-color: black;
+    color:aliceblue
+}
+
+
+
+
 .navbar.navbar-expand-lg.bg-secondary{
     background: rgb(226,100,112);
     background: linear-gradient(90deg, rgba(226,100,112,1) 0%, rgba(207,57,57,1) 50%, rgba(252,120,69,1) 100%); 
@@ -53,4 +64,12 @@ border-radius: 32px 32px 0 0;
 }
 div#info-actions {
     display:flex;
+}
+
+.Sobre-mi{
+    padding-top: 2rem;
+}
+
+h5 {
+    font-style: italic;
 }
