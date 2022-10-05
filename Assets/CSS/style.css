@@ -78,7 +78,7 @@ h5 {
     margin-bottom: 1rem;
 }
 
-#tituloBarrasProgress {
+h2 {
     text-align:left;
     font-style:oblique;
     font-weight: lighter;
@@ -136,4 +136,17 @@ h5{
   
   i.fa-brands.fa-html5 {
     color:brown;
+  }
+
+  i.fa-brands.fa-css3-alt{
+    color:aqua;
+  }
+  i.fa-brands.fa-square-js {
+    color:rgb(234, 234, 27);
+  }
+  i.fa-brands.fa-bootstrap {
+    color:rgb(104, 14, 188);
+  }
+  i.fa-brands.fa-angular {
+    color:rgb(105, 4, 4);
   }
