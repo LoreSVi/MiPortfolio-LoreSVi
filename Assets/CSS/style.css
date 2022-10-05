@@ -73,3 +73,67 @@ div#info-actions {
 h5 {
     font-style: italic;
 }
+
+.progress {
+    margin-bottom: 1rem;
+}
+
+#tituloBarrasProgress {
+    text-align:left;
+    font-style:oblique;
+    font-weight: lighter;
+}
+h5{
+    text-align: center;
+}
+
+#info-profesion{
+    font-size: x-large;
+}
+
+.navegacion{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    font-style:normal;
+    color:rgb(238, 238, 20);
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+}
+  
+  .navegacion-ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  .menu-hamburguesa {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+  #habilidades {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  
+  .contenedor-habilidad-img {
+    padding: 1.25rem;
+  }
+  
+  i.fa-brands.fa-html5 {
+    color:brown;
+  }
