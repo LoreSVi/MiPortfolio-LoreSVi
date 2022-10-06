@@ -100,10 +100,10 @@ h5{
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-cor);
+    box-shadow: 0 3px 5px rgba(63, 207, 34, 0.1);
     font-style:normal;
-    color:rgb(238, 238, 20);
+    color:rgb(184, 8, 137);
     font-size: larger;
     font-family:Arial, Helvetica, sans-serif;
 }
@@ -113,20 +113,17 @@ h5{
     gap: 1.9rem;
   }
   
-  .menu-hamburguesa {
-    color: var(--primary-color);
-    font-size: 2rem;
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
-    display: none;
+  .Educacion{
+    text-align: left;
+    margin: auto;
   }
 
   #habilidades {
     max-width: 68.75rem;
     margin: auto;
-    text-align: center;
+    text-align:left;
     margin-top: 2.5rem;
+    margin-bottom: 4rem;
   }
   
   
@@ -149,4 +146,14 @@ h5{
   }
   i.fa-brands.fa-angular {
     color:rgb(105, 4, 4);
+  }
+
+  #tituloBarrasProgress{
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .icono{
+    width: 11.875rem;
+    height: 11.25rem;
   }
