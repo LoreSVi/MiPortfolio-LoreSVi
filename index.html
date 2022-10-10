@@ -121,38 +121,46 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
          
 
     <!--Sección Experiencia-->
-    <div class="experiencia">
-  </div>
+    <div class="experiencia"></div>
+    <div id="info-experiencia" style="padding: 16px"></div>
+<h2>Experiencia Laboral</h2>
+  <div class="contenedor-experiencia">
+    <div class="container text-center">
+      <div class="row mt-3 g-2 g-1g-3">
+        <div class="col">
+         <div class="p-3 border bg-dark"><button type="button" class="btn btn-light btn-lg p-5"><i class="fa-brands fa-html5 fa-2xl"></i></button></div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-dark"><button type="button" class="btn btn-light btn-lg p-5"><i class="fa-brands fa-html5 fa-2xl"></i></button></div>
+         </div>
 
 
       
     <!--Seccion Educación-->
-    <div class="Educacion">
-      <div id="info-educacion" style="padding: 16px"></div>
-          <div class="container">
-    <form class="row mb-3">
-        <div class="col-8">
-       <h2>Educación</h2>
-       <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-      </div>
-         </div>
-   </form>
- </div>
- <form class="row mb-3">
-  <div class="col-8">
- <h5>Ministerio de Educación</h5>
+    <div class="Educacion"></div>
+    <div id="info-educacion" style="padding: 16px"></div>
+<h2>Educación</h2>
 </div>
-</form>
-<form class="row mb-3">
-  <div class="col-8">
- <h5>Profesora Nacional de Educación Fisica, Preceptora, Bibliotecaria</h5>
+  <div class="contenedor-educacion">
+    <div class="container text-center">
+      <div class="row mt-3 g-2 g-1g-3">
+        <div class="col">
+         <div class="p-3 border bg-dark">
+          <form class="row mb-3">
+            <div class="col-8">
+           <h5>Ministerio de Educación</h5>
+          </div>
+          <div class="col-8">
+            <h5>Profesora Nacional de Educación Fisica, Preceptora, Bibliotecaria</h5>
+           </div>
+           <div class="col-8">
+            <h5>10 años desempeñando diversas tareas en el ámbito docente.</h5>
+           </div>
+          </form>
+        </div>
+       </div>
 </div>
-</form>
-<form class="row mb-3">
-  <div class="col-8">
- <h5>10 años desempeñando diversas tareas en el ámbito docente.</h5>
-</div>
-</form>
+    </div>
 
 
     <!--Seccion Habilidades-->
@@ -185,6 +193,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
           </div>
         </div>
     </section>
+
                         <!--Barras de Progreso-->
 
  <div class="Barras de progreso mt-3" id="tituloBarrasProgress" style="padding: 25px">
@@ -220,6 +229,57 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
 
 
     <!--Sección Contacto-->
+
+    <section class="contacto" id="contacto">
+      <h2>Contactame</h2>
+      <div class="formulario-contacto-contenedor">
+        <div class="formulario-contacto">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="control-formulario">
+              <label for="name">Nombre</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Escribe tu nombre"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="control-formulario">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Ingreso tu correo electrónico"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="control-formulario">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                id="mensaje"
+                cols="60"
+                rows="10"
+                placeholder="Escribe tu mensaje"
+                name="mensaje"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Enviar"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
 
     <!--Sección vuelve al comienzo-->
 
