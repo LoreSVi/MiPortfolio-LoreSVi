@@ -23,11 +23,16 @@
            <li class="list-group-item"><a href="https://www.linkedin.com/in/lorena-vivas-966880a4/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
            <li class="list-group-item"><a href="https://www.instagram.com/lorelolivs/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
 
-       <!-- Login -->
-       <li class="list-group-item"><i class="fa-solid fa-user-lock fa-2xl text-white" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-       </i>
-     </li>
-  </ul>
+       <!-- Login --><!-- Login -->
+       <ul class="list-group list-group-horizontal align-items-center"></ul>
+<li class="list-group-item">
+  <button type="button" class="btn btn-primary btn-sm p-2">
+  <i class="fa-solid fa-user-lock fa-2xl text-white" data-bs-toggle="modal"
+  data-bs-target="#exampleModal"></i>
+  </button>
+  </li>
+
+     
                
     <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -80,25 +85,26 @@
     </div>
     </div>
    
+    <div class="segunda-tarjeta">
       <!--Sección Barra de Navegación-->
       <nav>
         <ul class="navegacion">
-          <li><a href="#Sobre-mi" class="nav-link">Acerca de Mí</a></li>
-          <li><a href="#experiencia" class="nav-link">Experiencia</a></li>
-          <li><a href="#Educacion" class="nav-link">Educación</a></li>
-          <li><a href="#Barras de progreso" class="nav-link">Habilidades</a></li>
-          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          <li><button type="button" class="btn btn-dark"><a href="#sobre-mi" class="nav-link">Acerca de Mí</a></button></li>
+          <li><button type="button" class="btn btn-dark"><a href="#experiencia" class="nav-link">Experiencia</a></button></li>
+          <li><button type="button" class="btn btn-dark"><a href="#Educacion" class="nav-link">Educación</a></button></li>
+          <li><button type="button" class="btn btn-dark"><a href="#Habilidades" class="nav-link">Habilidades</a></button></li>
+          <li><button type="button" class="btn btn-dark"><a href="#proyectos" class="nav-link">Proyectos</a></button></li>
+          <li><button type="button" class="btn btn-dark"><a href="#contacto" class="nav-link">Contacto</a></button></li>
         </ul>
   </nav>
-  
+ 
 
-    <!--Sobre mi-->
-   <div class="Sobre-mi">
+   <!--Sobre mi-->
+   <div id="sobre-mi" class="Sobre-mi">
           <h2>Acerca de</h2>
           <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-      </div>
-       </div>
+    
+       <div>
           <h6>
             Soy y una persona trabajadora y versátil, siendo capaz de adaptarme a cualquier ambiente,
 siempre dispuesta a aprender nuevas habilidades.
@@ -113,129 +119,115 @@ En estos momentos estoy en la búsqueda de un puesto dentro del sector IT donde
 poder desplegar mis habilidades blandas, así como las técnicas adquiridas hasta el momento
 y poder seguir enriqueciendo mi conocimiento como desarrolladora.
           </h6>
-         
+          <br>
+        </div>
+      </div>
+</div>
 
     <!--Sección Experiencia-->
-    <div class="experiencia"></div>
-    <div id="info-experiencia" style="padding: 16px"></div>
+   <div id="experiencia"  class="experiencia">
 <h2>Experiencia Laboral</h2>
-  <div class="contenedor-experiencia">
-    <div class="container text-center">
-      <div class="row mt-3 g-2 g-1g-3">
-        <div class="col">
-          <div class="p-3 border bg-dark">
-           <form class="row mb-3">
-
-        <div class="col-3">
-          <a class="escudo-institucion" href="#">
-            <img src="Assets/IMG/escudogob.png" alt="Escudo GCBA" class="w-75" >
-          </a>
-        </div>
-        <div class="col-4">
-          <span class="mr1 t-bold">Ministerio de Educación</span>
-          <br> 
-          <Span class="t-14 t-normal">GCBA educación-Jornada completa</Span>
-          <br> 
-          <Span class="t-14 t-normal">Profesora Educación Fisica, Tareas administrativas, Técnica Auxiliar Bibliotecaria</Span>
-          <br> 
-          <Span class="t-14 t-normal t-blank--light">Octubre 2012-actualidad</Span>    
  </div>
-</form>
-</div>
-</div>
-      </div>
-    </div>
-    </div>
+            <img src="Assets/IMG/gcba.png" class="pull-right img-circle" alt="Escudo GCBA">
+      <p><span class="mr1 t-bold">Ministerio de Educación</span>
+        <br> 
+        <Span class="t-14 t-normal">GCBA educación-Jornada completa</Span>
+        <br> 
+        <Span class="t-14 t-normal">Profesora Educación Fisica, Tareas administrativas, Técnica Auxiliar Bibliotecaria</Span>
+        <br> 
+        <Span class="t-14 t-normal t-blank--light">Octubre 2012-actualidad</Span>  
+             </p>
+        
+ 
 
 
 
       
     <!--Seccion Educación-->
-    <div class="Educacion"></div>
-    <div id="info-educacion" style="padding: 16px"></div>
-<h2>Educación</h2>
-</div>
+    <div id="Educacion" class="Educacion"></div>
   <div class="contenedor-educacion">
-    <div class="container text-center">
-      <div class="row mt-3 g-2 g-1g-3">
-        <div class="col">
-          <div class="p-3 border bg-dark">
-           <form class="row mb-3">
-
-        <div class="col-4">
+    <div class="container">
+           <form class="row">
+            <div class="box">
+        <div class="col-6">
           <a class="escudo-educacion1" href="#">
             <img src="Assets/IMG/arg-programaLogo.png" alt="Logo Argentina Programa" class="w-75" >
           </a>
         </div>
-        <div class="col-4 m-3">
+        <div class="col-6">
           <span class="mr1 t-bold">Argentina Programa</span>
           <br> 
           <Span class="t-14 t-normal">Desarrolladora Full Stack Jr.</Span>
           <br> 
           <Span class="t-14 t-normal t-blank--light">Febrero 2022-actualidad</Span>    
  </div>
+ </div>
 </form>
 </div>
 </div>
-      </div>
-    </div>
-    </div>
-
+     
 
     <!--Seccion Habilidades-->
-    <section class="habilidades mb-3" id="habilidades" style="padding: 25px">
-      <h2>Mis mejores habilidades</h2>
+    <div class="Habilidades" id="Habilidades"></div>
+      <h2>Hard & Soft Skills</h2>
       <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
       <div class="contenedor-habilidades">
            <div class="container text-center">
-          <div class="row mb-5">
-            <div class="col">
-              <div class="icono">
-                <li class="list-group-item"><i class="fa-brands fa-html5 fa-2xl"></i></li> 
-              </div>
-            </div>
-            <div class="col">
-              <li class="list-group-item"><i class="fa-brands fa-css3-alt fa-2xl"></i></li>
-            </div>
-            <div class="col"><li class="list-group-item"><i class="fa-brands fa-square-js fa-2xl"></i></li>
-            </div>
-            <div class="col"><li class="list-group-item"><i class="fa-brands fa-bootstrap fa-2xl"></i></li> 
-             </div>
-          </div>
-          <div class="row mb-3">
-            <div class="col-8"><li class="list-group-item"><i class="fa-brands fa-angular fa-2xl"></i></li> 
-            </div>
-            <div class="col-4"><li class="list-group-item"><i class="fa-brands fa-github fa-2xl"></i></li>
-            </div>
+      
           </div>
         </div>
-      </div>
-    </section>
-
-
-
-                        <!--Barras de Progreso-->
-
- <div class="Barras de progreso mt-3" id="tituloBarrasProgress" style="padding: 25px">
-  <h2>Barras de Progreso</h2>
+     
+       
+ <!--Barras de Progreso-->
+ <div class="Barras de progreso" id="tituloBarrasProgress" style="padding: 25px">
    </div>
   <div class="skills-container">
     <div class="container">
       <form class="row mb-3">
-        <div class="col-6">
     <h5>HTML</h5>
+    <div class="icono">
+      <li class="list-group-item"><i class="fa-brands fa-html5 fa-2xl"></i></li> 
+    </div>
       <div class="progress">
-         <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-label="Info striped example" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
+        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Warning striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
 
       <h5>CSS</h5>
+      <div class="icono">
+        <li class="list-group-item"><i class="fa-brands fa-css3-alt fa-2xl"></i></li>
+      </div>
       <div class="progress">
         <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-label="Warning striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
+
       <h5>JavaScript</h5>
-      <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-label="Danger striped example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      <div class="icono"><li class="list-group-item"><i class="fa-brands fa-square-js fa-2xl"></i></li>
       </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-label="Danger striped example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <h5>Boostrap</h5>
+      <div class="icono"><li class="list-group-item"><i class="fa-brands fa-bootstrap fa-2xl"></i></li> 
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" aria-label="Danger striped example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <h5>Angular</h5>
+      <div class="icono"><li class="list-group-item"><i class="fa-brands fa-angular fa-2xl"></i></li> 
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-label="Danger striped example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
+      <h5>GitHub</h5>
+      <div class="icono"><li class="list-group-item"><i class="fa-brands fa-github fa-2xl"></i></li>
+      </div>
+  <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-dark" role="progressbar" aria-label="Danger striped example" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+
       </div>
     </div>
   </form>
@@ -243,8 +235,8 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
 
   
       <!--Sección Proyectos-->
-
-
+<div class="proyectos" id="proyectos">
+    </div>
 
 
 
@@ -254,6 +246,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
       <h2>Contactame</h2>
       <div class="formulario-contacto-contenedor">
         <div class="formulario-contacto">
+          <div class=" col-md-6 tm-contact-left">
           <form action="https://formspree.io/f/xyylngw" method="POST">
             <div class="control-formulario mb-3">
               <label for="name">Nombre</label>
@@ -298,6 +291,12 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
           </form>
         </div>
       </div>
+      <div class="col-md-6 tm-contact-right">
+        <p><span class="mb-4">email: loresuvivas@gmail.com></span>
+            <br> 
+            <Span class="mb-4">cel: 1159580053</Span>
+      </div>
+    </div>
     </section>
 
 
