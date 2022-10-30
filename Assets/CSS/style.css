@@ -1,9 +1,9 @@
 body {
-   background-color:beige;
+   background-color:rgb(134, 134, 139);
   margin: 3;
   padding: 3;
   font-family: sans-serif;
-  color: rgb(11, 17, 17);
+  color: rgb(227, 240, 240);
 }
 
 
@@ -38,10 +38,6 @@ body {
     padding: 20px;
     border-color:rgb(0, 132, 255);
 }
-.segunda-tarjeta {
-  background-color: rgb(135, 90, 219);
-  padding: 0;
-}
 
 .presentacion.tarjeta#primera{
   padding: 0;   
@@ -65,7 +61,13 @@ border-radius: 32px 32px 0 0;
     z-index: 1;
 }
 
+#tarjeta-experiencia {
+  background-color: rgb(116, 88, 141);
+}
 
+#tarjeta-educacion {
+  background-color: rgb(47, 47, 114);
+}
 .box {
   box-sizing: border-box;
   background-color: lightgray;
