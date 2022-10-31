@@ -1,13 +1,13 @@
 body {
    background-color:rgb(134, 134, 139);
-  margin: 3;
+  margin: 16px;;
   padding: 3;
   font-family: sans-serif;
-  color: rgb(227, 240, 240);
+  color:azure;
 }
 
 
-.navbar.navbar-expand-lg.bg-secondary{
+.navbar {
   background: rgb(222,86,210);
   background: linear-gradient(90deg, rgba(222,86,210,1) 14%, rgba(213,129,197,1) 35%, rgba(241,160,226,0.20818749863226538) 64%);
 }
@@ -47,11 +47,15 @@ div#fondo-perfil{
     z-index:1;
 }
 
+.info-datos {
+  text-align: center;
+  margin-top: -40px;
+}
+
 div#perfil-fondo img {
 width:100%;
 border-radius: 32px 32px 0 0;
 }
-
 
 .imagen-perfil {
     border-radius: 50%;
@@ -68,18 +72,9 @@ border-radius: 32px 32px 0 0;
 #tarjeta-educacion {
   background-color: rgb(47, 47, 114);
 }
-.box {
-  box-sizing: border-box;
-  background-color: lightgray;
-}
+
 .progress {
     margin-bottom: 2rem;
-}
-
-
-
-#info-profesion{
-    font-size: x-large;
 }
 
 
@@ -114,7 +109,9 @@ border-radius: 32px 32px 0 0;
   padding-bottom: 1rem;
  }
   
-  
+  .card-proyecto {
+    background-color: rgb(235, 124, 216);
+  }
 
   
   i.fa-brands.fa-html5 {
