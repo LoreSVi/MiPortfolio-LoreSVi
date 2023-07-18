@@ -52,10 +52,12 @@ div#fondo-perfil{
   margin-top: -40px;
 }
 
+
 div#perfil-fondo img {
-width:100%;
-border-radius: 32px 32px 0 0;
-}
+  width:100%;
+  border-radius: 32px 32px 32px 32px;
+  }
+
 
 .imagen-perfil {
     border-radius: 50%;
