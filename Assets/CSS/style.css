@@ -1,30 +1,38 @@
-body {
-   background-color:rgb(134, 134, 139);
-  margin: 16px;;
-  padding: 3;
-  font-family: sans-serif;
-  color:azure;
+@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Josefin+Sans:ital,wght@0,100;0,300;0,600;0,700;1,100;1,300;1,600&display=swap");
+* {
+  box-sizing: border-box;
 }
 
-
-.navbar {
-  background: rgb(222,86,210);
-  background: linear-gradient(90deg, rgba(222,86,210,1) 14%, rgba(213,129,197,1) 35%, rgba(241,160,226,0.20818749863226538) 64%);
+nav{
+  background-color: rgb(154, 100, 140);
+  img{
+      padding: 10px;
+      margin-left: 20px;
+      width: 2%;
+  }
+  .navbar-toggler{
+      border: none !important;
+      &:focus{
+          box-shadow: none !important ;
+      }
+  }
+  .boton-hamburguesa{
+      background-color: none !important;
+      color: rgb(134, 48, 127);
+      border: none;
+      margin: 5px; 
+      span:hover{
+          color: grey;
+      }
+  }
 }
-
-
-    i.fa-brands.fa-instagram.fa-2xl:hover{
-    color: blueviolet;
+i.fa-brands{
+  color:aliceblue;
+}
+    i.fa-brands:hover{
+        color:rgb(239, 41, 225);
     }
-    i.fa-brands.fa-linkedin.fa-2xl:hover{
-        color:aqua;
-    }
-    i.fa-brands.fa-github.fa-2xl:hover{
-        color:antiquewhite;
-    }
-    i.fa-solid.fa-user-lock.fa-2xl:hover{
-        color:rgb(29, 29, 63);
-    }
+   
 .list-group{
  --bs-list-group-bg: transparent;
 }
@@ -32,16 +40,7 @@ body {
 --bs-list-group-border-width: none;
 }
 
-#primer-tarjeta {
-    border-radius: 32px;
-    margin:10 px 10px;
-    padding: 20px;
-    border-color:rgb(0, 132, 255);
-}
 
-.presentacion.tarjeta#primera{
-  padding: 0;   
-}
 div#fondo-perfil{
     display: flex;
     z-index:1;
@@ -89,10 +88,9 @@ div#perfil-fondo img {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-cor);
-    box-shadow: 0 3px 5px rgba(63, 207, 34, 0.1);
+    box-shadow: 0 3px 5px rgba(97, 105, 96, 0.1);
     font-style:normal;
-    color:rgb(34, 5, 73);
+    color:rgb(90, 69, 117);
     font-size: larger;
     font-family:Arial, Helvetica, sans-serif;
     list-style:none;
@@ -133,7 +131,3 @@ div#perfil-fondo img {
     color:rgb(105, 4, 4);
   }
 
-.formulario-contacto {
-  font-size: 19px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- }

@@ -8,70 +8,54 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 <!--Fontawesome-->
 <script src="https://kit.fontawesome.com/142ab572f9.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+<link rel="stylesheet" type="text/css" href="Assets/css/style.css">
 <title>PortfolioLorenaVivas</title>
 </head>
 <body>
   <!--HEADER-->
-    <nav class="navbar navbar-expand-lg bg-secondary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="Assets/IMG/arg-programaLogo.png" alt="Logo Argentina Programa" class="w-75" >
-          </a>
+          <div id="botonera">
+                <a class="navbar-brand px-3 fs-2 fw-bold" href="#"
+                  ><img
+                    class="milogoNav"
+                    src="#"
+                /></a>
+      
+                <button
+                  class="navbar-toggler boton-hamburguesa"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span> Menú</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navegacion me-auto mb-2 mb-lg-0">
+                      <li><button type="button" class="btn btn-outline-light"><a href="#sobre-mi" class="nav-link">Acerca de Mí</a></button></li>
+                      <li><button type="button" class="btn btn-outline-light"><a href="#experiencia" class="nav-link">Experiencia</a></button></li>
+                      <li><button type="button" class="btn btn-outline-light"><a href="#Educacion" class="nav-link">Educación</a></button></li>
+                      <li><button type="button" class="btn btn-outline-light"><a href="#Habilidades" class="nav-link">Habilidades</a></button></li>
+                      <li><button type="button" class="btn btn-outline-light"><a href="#proyectos" class="nav-link">Proyectos</a></button></li>
+                      <li><button type="button" class="btn btn-outline-light"><a href="#contacto" class="nav-link">Contacto</a></button></li>
+                    </ul>
+              </div>
+              </div>
           <ul class="list-group list-group-horizontal"> 
            <li class="list-group-item"><a href="https://github.com/LoreSVi/MiproyectoFrontEnd.git" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li> 
            <li class="list-group-item"><a href="https://www.linkedin.com/in/lorena-vivas-966880a4/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
            <li class="list-group-item"><a href="https://www.instagram.com/lorelolivs/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-
-       <!-- Login --><!-- Login -->
-       <ul class="list-group list-group-horizontal align-items-center"></ul>
-<li class="list-group-item">
-  <button type="button" class="btn btn-primary btn-sm p-2">
-  <i class="fa-solid fa-user-lock fa-2xl text-white" data-bs-toggle="modal"
-  data-bs-target="#exampleModal"></i>
-  </button>
-  </li>
-
-     
-               
-    <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" style="color:blue" id="exampleModalLabel">Iniciar Sesión</h3>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="mb-3 row">
-          <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" id="inputEmail" value="email@dominio.com" placeholder="Ingresa Email">
-          </div>
-        </div>
-        <div class="mb-3 row">
-          <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="inputPassword" placeholder="Ingresa Contraseña">
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Iniciar Sesion</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+            </ul>
 </nav>
 
 <!--Seccion Banner-->
 <div class="presentacion" id="primer-tarjeta">
-  <div id="perfil-fondo"><img src="Assets/IMG/imagenfondoazul.jpg"></div>
-  
+  <div id="perfil-fondo"><img src="Assets/img/bici-bg.jpg"></div>
       <div id="info-img">
-        <img class="imagen-perfil" src="Assets/IMG/mifoto.jpg">
-        <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
+        <img class="imagen-perfil" src="Assets/img/mifoto.jpg">
       </div>
       <div class="info-datos">
           <h2>Soy</h2>
@@ -82,24 +66,11 @@
 
 
     <div class="segunda-tarjeta">
-      <!--Sección Barra de Navegación-->
-      <nav>
-        <ul class="navegacion">
-          <li><button type="button" class="btn btn-dark"><a href="#sobre-mi" class="nav-link">Acerca de Mí</a></button></li>
-          <li><button type="button" class="btn btn-dark"><a href="#experiencia" class="nav-link">Experiencia</a></button></li>
-          <li><button type="button" class="btn btn-dark"><a href="#Educacion" class="nav-link">Educación</a></button></li>
-          <li><button type="button" class="btn btn-dark"><a href="#Habilidades" class="nav-link">Habilidades</a></button></li>
-          <li><button type="button" class="btn btn-dark"><a href="#proyectos" class="nav-link">Proyectos</a></button></li>
-          <li><button type="button" class="btn btn-dark"><a href="#contacto" class="nav-link">Contacto</a></button></li>
-        </ul>
-  </nav>
- 
-
+    
+    
    <!--Sobre mi-->
    <div id="sobre-mi" class="Sobre-mi">
           <h2>Acerca de</h2>
-          <div class="btn-edit"><a href="#" class="btn-right"><i class="fa fa-pen"></i></a></div>
-    
        <div>
           <h6>
             Soy y una persona trabajadora y versátil, siendo capaz de adaptarme a cualquier ambiente,
@@ -127,7 +98,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
              <div class="card mb-3" style="max-width: 540px;">
               <div class="row g-0" id="tarjeta-experiencia">
                 <div class="col-md-4">
-                  <img src="Assets/IMG/gcba.png" class="img-fluid rounded-start" alt="Escudo GCBA">
+                  <img src="Assets/img/gcba.png" class="img-fluid rounded-start" alt="Escudo GCBA">
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
@@ -147,7 +118,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
             <div class="card mb-3" style="max-width: 540px;">
              <div class="row g-0" id="tarjeta-experiencia">
                <div class="col-md-4">
-                 <img src="Assets/IMG/megatlonlogo.jpg" class="img-fluid rounded-start" alt="Escudo GCBA">
+                 <img src="Assets/img/megatlonlogo.jpg" class="img-fluid rounded-start" alt="Escudo GCBA">
                </div>
                <div class="col-md-8">
                  <div class="card-body">
@@ -175,7 +146,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
   <div class="card mb-3" style="max-width: 540px;">
    <div class="row g-0" id="tarjeta-educacion">
      <div class="col-md-4">
-       <img src="Assets/IMG/arg-programaLogo.png" class="img-fluid rounded-start" alt="argenitna programa logo">
+       <img src="Assets/img/arg-programaLogo.png" class="img-fluid rounded-start" alt="argenitna programa logo">
      </div>
      <div class="col-md-8">
        <div class="card-body">
@@ -194,7 +165,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
   <div class="card mb-3" style="max-width: 540px;">
    <div class="row g-0" id="tarjeta-educacion">
      <div class="col-md-4">
-       <img src="Assets/IMG/coderhouselogo.png" class="img-fluid rounded-start" alt="argenitna programa logo">
+       <img src="Assets/img/coderhouselogo.png" class="img-fluid rounded-start" alt="argenitna programa logo">
      </div>
      <div class="col-md-8">
        <div class="card-body">
@@ -213,7 +184,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
   <div class="card mb-3" style="max-width: 540px;">
    <div class="row g-0" id="tarjeta-educacion">
      <div class="col-md-4">
-       <img src="Assets/IMG/logolinkedin.png" class="img-fluid rounded-start" alt="argenitna programa logo">
+       <img src="Assets/img/logolinkedin.png" class="img-fluid rounded-start" alt="argenitna programa logo">
      </div>
      <div class="col-md-8">
        <div class="card-body">
@@ -233,7 +204,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
   <div class="card mb-3" style="max-width: 540px;">
    <div class="row g-0" id="tarjeta-educacion">
      <div class="col-md-4">
-       <img src="Assets/IMG/googleactivatelogo1.png" class="img-fluid rounded-start" alt="argenitna programa logo">
+       <img src="Assets/img/googleactivatelogo1.png" class="img-fluid rounded-start" alt="argenitna programa logo">
      </div>
      <div class="col-md-8">
        <div class="card-body">
@@ -253,7 +224,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
   <div class="card mb-3" style="max-width: 540px;">
    <div class="row g-0" id="tarjeta-educacion">
      <div class="col-md-4">
-       <img src="Assets/IMG/googleactivatelogo1.png" class="img-fluid rounded-start" alt="argenitna programa logo">
+       <img src="Assets/img/googleactivatelogo1.png" class="img-fluid rounded-start" alt="argenitna programa logo">
      </div>
      <div class="col-md-8">
        <div class="card-body">
@@ -351,7 +322,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <div class="col">
         <div class="card-proyecto">
-          <img src="Assets/IMG/capturaportfolio.png" class="card-img-top" alt="foto portfolio">
+          <img src="Assets/img/capturaportfolio.png" class="card-img-top" alt="foto portfolio">
           <div class="card-body">
             <h5 class="card-title">Mi Portfolio Web</h5>
             <p class="card-text">Este es mi portfolio web donde pueden ver todos mis proyectos y datos acerca de mi.</p>
@@ -361,7 +332,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
       </div>
       <div class="col">
         <div class="card-proyecto">
-          <img src="Assets/IMG/Geneselore.png" class="card-img-top" alt="Geneselore indumentaria">
+          <img src="Assets/img/Geneselore.png" class="card-img-top" alt="Geneselore indumentaria">
           <div class="card-body">
             <h5 class="card-title">Indumentaria Geneselore</h5>
             <p class="card-text">Este es un trabajo realizado para el curso de Desarrollo Web, utilizando SASS.</p>
@@ -371,7 +342,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
       </div>
       <div class="col">
         <div class="card-proyecto">
-          <img src="Assets/IMG/E-coJavaScript.png" class="card-img-top" alt="shop sending love">
+          <img src="Assets/img/E-coJavaScript.png" class="card-img-top" alt="shop sending love">
           <div class="card-body">
             <h5 class="card-title">shop sending love</h5>
             <p class="card-text">Ecomerce creado en JavaScript utilizando también sweet alert y tostify.</p>
@@ -381,7 +352,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
       </div>
       <div class="col">
         <div class="card-proyecto">
-          <img src="Assets/IMG/DogStorepicture.jpeg" class="card-img-top" alt="...">
+          <img src="Assets/img/DogStorepicture.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Ecommerce DogStoreMila</h5>
             <p class="card-text">Trabajo realizado con React Js, material UI, sweetalert2.</p>
@@ -392,65 +363,7 @@ y poder seguir enriqueciendo mi conocimiento como desarrolladora.
     </div>
 
 
-    <!--Sección Contacto-->
-
-    <section class="contacto" id="contacto">
-      <h2>Contactame</h2>
-      <div class="formulario-contacto-contenedor">
-        <div class="formulario-contacto">
-          <div class=" col-md-6 tm-contact-left">
-          <form action="https://formspree.io/f/xyylngw" method="POST">
-            <div class="control-formulario mb-3">
-              <label for="name">Nombre</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Escribe tu nombre"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="control-formulario mb-3">
-              <label for="email">Correo Electrónico</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Ingreso tu correo electrónico"
-                class="input-field"
-                required
-              />
-            </div>
-            <div class="control-formulario mb-3">
-              <label for="mensaje">Mensaje</label>
-              <textarea
-                id="mensaje"
-                cols="60"
-                rows="10"
-                placeholder="Escribe tu mensaje"
-                name="mensaje"
-                class="input-field"
-                required
-              ></textarea>
-            </div>
-            <input
-              type="submit"
-              value="Enviar"
-              id="submit-btn"
-              class="submit-btn"
-            />
-          </form>
-        </div>
-      </div>
-      <div class="col-md-6 tm-contact-right">
-        <p><span class="mb-4">email: loresuvivas@gmail.com></span>
-            <br> 
-            <Span class="mb-4">cel: 1159580053</Span>
-            <span>Buenos Aires (Argentina)</span>
-      </div>
-    </div>
-    </section>
+  
 
 
     <!--Sección vuelve al comienzo-->
