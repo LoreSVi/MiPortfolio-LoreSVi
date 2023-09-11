@@ -48,36 +48,23 @@ div#fondo-perfil{
 
 .info-datos {
   text-align: center;
-  margin-top: -40px;
+  margin-top: -550px;
 }
 
 
 div#perfil-fondo img {
   width:100%;
-  border-radius: 32px 32px 32px 32px;
+  height:750px;
   }
 
 
 .imagen-perfil {
     border-radius: 50%;
-    width: 152px;
-    height: 152px;
-    margin-top: -110px;
+    width: 172px;
+    height: 172px;
     z-index: 1;
+    text-align: center;
 }
-
-#tarjeta-experiencia {
-  background-color: rgb(116, 88, 141);
-}
-
-#tarjeta-educacion {
-  background-color: rgb(47, 47, 114);
-}
-
-.progress {
-    margin-bottom: 2rem;
-}
-
 
 .navegacion{
     position: sticky;
@@ -101,6 +88,9 @@ div#perfil-fondo img {
     gap: 1.9rem;
      }
 
+.acercaDeMi{
+  padding-top: 300px;
+}    
      .Habilidades {
       padding: 2rem; 
       }
@@ -131,3 +121,15 @@ div#perfil-fondo img {
     color:rgb(105, 4, 4);
   }
 
+  #tarjeta-experiencia {
+    background-color: rgb(116, 88, 141);
+  }
+  
+  #tarjeta-educacion {
+    background-color: rgb(47, 47, 114);
+  }
+  
+  .progress {
+      margin-bottom: 2rem;
+  }
+  
