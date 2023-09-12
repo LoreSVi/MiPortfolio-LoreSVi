@@ -90,10 +90,8 @@ i.fa-brands{
     }
    
 .list-group{
- --bs-list-group-bg: transparent;
-}
-.list-group{
---bs-list-group-border-width: none;
+ --bs-list-group-bg: transparent important!;
+ --bs-list-group-border-width: none;
 }
 
 
