@@ -2,6 +2,62 @@
 * {
   box-sizing: border-box;
 }
+.info-datos{
+  display: flexbox;
+}
+
+.h1-intro{
+  font-size: 110px;
+  color: rgba(214, 201, 231, 0);
+  -webkit-text-stroke: 1px rgba(255, 251, 255, 0.986);
+  -webkit-background-clip: text;
+  background-image:  url(../img/back2.png);
+  background-position: 0 0;
+  animation: back 30s linear infinite;   
+  position: absolute;
+  top: 22%;
+  justify-content: center;
+  padding-left: 500px;
+}
+@keyframes back{
+  100%{
+      background-position: 2000px 0;
+  }
+}
+h2{
+  text-align: center;
+}
+.imagen-perfil{
+  width: 400px;
+    position:sticky;
+    top: 20%;
+    left: 4%;
+}
+
+.imagen-unicornio{
+  width: 200px;
+    position:sticky;
+    top: 20%;
+    left: 10%;
+    animation: rotando 10s linear infinite;
+}
+
+@keyframes rotando {
+    0% {
+      transform: rotate(0deg);
+    }
+    40% {
+      transform: rotate(10deg);
+    }
+    80% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
 
 nav{
   background-color: rgb(154, 100, 140);
@@ -63,7 +119,6 @@ div#perfil-fondo img {
     width: 172px;
     height: 172px;
     z-index: 1;
-    text-align: center;
 }
 
 .navegacion{
