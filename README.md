@@ -1,2 +1,2 @@
-# Mis primeros pasos FrontEnd estático
+# Mi Portfolio
 Contando un poco sobre mi.
