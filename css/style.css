@@ -175,29 +175,26 @@ i.fa-brands.fa-angular {
 #tarjeta-educacion {
   background-color: rgb(47, 47, 114);
 }
-.Educacion{
+.Educacion {
   display: flex;
-width:100%;
-height: 430px;
-
+  width: 100%;
+  height: 630px;
 }
 
 .Educacion img {
-width: 0px;
-flex-grow: 1;
-object-fit: cover;
-opacity: .8;
-transition: .5s ease;
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
 }
 
-.Educacion img:hover{
-cursor: crosshair;
-width: 300px;
-opacity: 1;
-filter: contrast (120%);
+.Educacion img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast (120%);
 }
-
-
 
 .progress {
   margin-bottom: 2rem;
@@ -211,33 +208,32 @@ filter: contrast (120%);
   background-color: rgb(138, 98, 151);
   padding-bottom: 20px;
 }
-.experiencia .column{
+.experiencia .column {
   border-radius: 8px;
   width: auto;
-  box-shadow: 0px 0px
-  3px #000; 
+  box-shadow: 0px 0px 3px #000;
 }
 
 /*boton ir arriba*/
 #button-up {
-display: flex;
+  display: flex;
   width: 60px;
   height: 60px;
   background-color: rgb(241, 23, 89);
   justify-content: center;
   align-items: center;
- color:#d8c8e7;
- border-radius:50%;
- font-size: 16px;
- position: fixed;
- bottom:50px;
- right:50px;
- cursor: pointer;
- border: 4px solid transparent;
- transition: all 300ms ease;
+  color: #d8c8e7;
+  border-radius: 50%;
+  font-size: 16px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 300ms ease;
 }
 
-#button-up:hover{
+#button-up:hover {
   transform: scale(1.1);
-  border-color:rgba(0,0,0,0.1)
+  border-color: rgba(0, 0, 0, 0.1);
 }
