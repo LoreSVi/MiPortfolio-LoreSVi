@@ -14,14 +14,14 @@
   background-image: url(../img/back2.png);
   background-position: 0 0;
   animation: back 30s linear infinite;
-  position: absolute;
+  position: relative;
   top: 30%;
   justify-content: center;
   padding-left: 300px;
 }
 @keyframes back {
   100% {
-    background-position: 2000px 0;
+    background-position: 1000px 0;
   }
 }
 h2 {
@@ -148,7 +148,15 @@ div#perfil-fondo img {
 }
 
 .card-proyecto {
-  background-color: rgb(235, 124, 216);
+  background-color: rgb(204, 124, 235);
+  width: 35rem;
+  height: 45rem;
+  padding: 10px;
+  margin-left: 8px;
+}
+.card-proyect img {
+  width: 30rem;
+  height: 12rem;
 }
 
 i.fa-brands.fa-html5 {
@@ -230,12 +238,29 @@ i.fa-brands.fa-angular {
 .grilla .item6 {
   grid-area: seis;
   display: flex;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   justify-content: center;
   width: 65rem;
   padding-left: 20px;
   margin-left: 5rem;
+}
+
+@media (width < 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .ul .navegacion {
+    align-items: start;
+    flex-direction: column;
+  }
+  .capacitaciones .card {
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+    position:relative;
+  }
 }
 
 @media (width < 768px) {
@@ -297,10 +322,6 @@ i.fa-brands.fa-angular {
   filter: contrast (120%);
 }
 
-.progress {
-  margin-bottom: 2rem;
-}
-
 .Habilidades {
   background-image: url(../img/mirandociudadC.jpg);
   color: aliceblue;
@@ -338,3 +359,20 @@ i.fa-brands.fa-angular {
   transform: scale(1.1);
   border-color: rgba(0, 0, 0, 0.1);
 }
+
+footer {
+  padding: 10px 60px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(208, 203, 209);
+}
+   .footer .a {
+      text-decoration: none;
+      display: block;
+      color: rgb(51, 20, 255);
+      font-size: 0.8rem;
+      margin-bottom: 4px;
+    }
+  
