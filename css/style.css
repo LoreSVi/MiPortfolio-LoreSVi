@@ -1,39 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Josefin+Sans:ital,wght@0,100;0,300;0,600;0,700;1,100;1,300;1,600&display=swap");
-* {
-  box-sizing: border-box;
-}
-.info-datos {
-  display: flexbox;
-}
-
-.h1-intro {
-  font-size: 110px;
-  color: rgba(214, 201, 231, 0);
-  -webkit-text-stroke: 1px rgba(255, 251, 255, 0.986);
-  -webkit-background-clip: text;
-  background-image: url(../img/back2.png);
-  background-position: 0 0;
-  animation: back 30s linear infinite;
-  position: relative;
-  top: 30%;
-  justify-content: center;
-  padding-left: 300px;
-}
-@keyframes back {
-  100% {
-    background-position: 1000px 0;
-  }
-}
 h2 {
   text-align: center;
+  text-decoration: underline;
 }
-.imagen-perfil {
-  width: 400px;
-  position: sticky;
-  top: 20%;
-  left: 4%;
+nav a{
+  color:white !important;
 }
 
+nav a:hover {
+  color:black !important;
+}
+.imagen-perfil {
+    padding-top: 30px;
+    border-radius: 50%;
+    width: 172px;
+    height: 172px;
+  }
+ 
+  .imagen-con-forma {
+    clip-path: circle(50% at 50% 50%);
+  }
+  
 .imagen-unicornio {
   width: 200px;
   position: sticky;
@@ -58,77 +44,58 @@ h2 {
 }
 
 nav {
-  background-color:rgb(255, 0, 255);
-  img {
-    padding: 10px;
-    margin-left: 20px;
-    width: 2%;
-  }
-  .navbar-toggler {
-    border: none !important;
-    &:focus {
-      box-shadow: none !important ;
-    }
-  }
-  .boton-hamburguesa {
-    background-color: none !important;
-    color: rgb(134, 48, 127);
-    border: none;
-    margin: 5px;
-    span:hover {
-      color: grey;
-    }
+  background-color: rgb(255, 0, 255);
+}
+
+.boton-hamburguesa {
+  background-color: none !important;
+  color: rgb(134, 48, 127);
+  border: none;
+  margin: 5px;
+  span:hover {
+    color: grey;
   }
 }
+
 i.fa-brands {
-  color: rgb(29, 33, 36);
+  color: white;
 }
-i.fa-brands:hover {
-  color: rgb(238, 214, 236);
-}
+
 
 .list-group {
-  --bs-list-group-bg: transparent;
+  --bs-list-group-bg: transparent !important;
   --bs-list-group-border-width: none;
+  text-decoration: none;
+}
+.presentacion{
+  background-image: url(/img/fond1.jpg);
+  padding: 30px;
 }
 
-div#fondo-perfil {
-  display: flex;
-  z-index: 1;
+
+.presentacion .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1.5fr;
+  grid-template-rows: 1fr;
+  gap: 8px;
 }
 
-.info-datos {
-  text-align: center;
-  margin-top: -550px;
-}
-
-div#perfil-fondo img {
-  width: 100%;
-  height: 750px;
-}
-
-.imagen-perfil {
-  border-radius: 50%;
-  width: 172px;
-  height: 172px;
-  z-index: 1;
-}
-
-.navegacion {
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: flex;
+.grid-item1 {
+  padding: 10px;
   align-items: center;
-  justify-content: space-between;
-  padding: 1.5rem 3.5rem;
-  box-shadow: 0 3px 5px rgba(97, 105, 96, 0.1);
-  font-style: normal;
-  color: rgb(90, 69, 117);
-  font-size: larger;
-  font-family: Arial, Helvetica, sans-serif;
-  list-style: none;
+  justify-content: center;
+}
+.grid-item2 {
+  padding: 2px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-item3 {
+ padding-top: 95px;
+  align-items:left;
+  justify-content:end;
 }
 
 .navegacion-ul {
@@ -137,7 +104,7 @@ div#perfil-fondo img {
 }
 
 .acercaDeMi {
-  padding-top: 300px;
+  padding-top: 30px;
 }
 .Habilidades {
   padding: 2rem;
@@ -146,17 +113,18 @@ div#perfil-fondo img {
 .icono {
   padding-bottom: 1rem;
 }
-
-.card-proyecto {
-  background-color: rgb(204, 124, 235);
-  width: 35rem;
-  height: 45rem;
-  padding: 10px;
-  margin-left: 8px;
+.proyectos{
+  padding: 20px;
 }
-.card-proyect img {
-  width: 30rem;
-  height: 12rem;
+.proyectos .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+}
+.proyectos img {
+ width: 30em;
+ height: 30em;
 }
 
 i.fa-brands.fa-html5 {
@@ -259,7 +227,7 @@ i.fa-brands.fa-angular {
     flex-direction: column;
     align-items: flex-start;
     display: flex;
-    position:relative;
+    position: relative;
   }
 }
 
@@ -336,8 +304,6 @@ i.fa-brands.fa-angular {
   box-shadow: 0px 0px 3px #000;
 }
 
-
-
 /*boton ir arriba*/
 #button-up {
   display: flex;
@@ -363,18 +329,26 @@ i.fa-brands.fa-angular {
 }
 
 footer {
-  border-top:2px solid grey ;
+  border-top: 2px solid grey;
   margin-top: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:rgb(236, 232, 232);
+  background-color:black;
+  color:deeppink;
 }
-   .footer .a {
-      text-decoration: none;
-      display: block;
-      color:grey;
-      font-size: 0.8rem;
-      margin-bottom: 4px;
-    }
-  
+.footer .a {
+  text-decoration: none;
+  display: block;
+  color: grey;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+.footer a:hover{
+color:deeppink;
+}
+
+.footer i.fa-brands:hover{
+  color:deeppink;
+}

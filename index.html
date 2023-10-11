@@ -26,15 +26,9 @@
 <body>
   <!--HEADER-->
   <header>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <div id="botonera">
-                <a class="navbar-brand" href="index.html"
-                  ><img
-                    class="milogoNav"
-                    src="img/icons8-casa.gif"
-                /></a>
-      
                 <button
                   class="navbar-toggler boton-hamburguesa"
                   type="button"
@@ -45,38 +39,47 @@
                 >
                   <span> Menú</span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navegacion me-auto mb-2 mb-lg-0">
-                      <li><button type="button" class="btn btn-outline-light"><a href="#sobre-mi" class="nav-link">Acerca de Mí</a></button></li>
-                      <li><button type="button" class="btn btn-outline-light"><a href="#experiencia" class="nav-link">Experiencia</a></button></li>
-                      <li><button type="button" class="btn btn-outline-light"><a href="#Educacion" class="nav-link">Educación</a></button></li>
-                      <li><button type="button" class="btn btn-outline-light"><a href="#Habilidades" class="nav-link">Habilidades</a></button></li>
-                      <li><button type="button" class="btn btn-outline-light"><a href="#proyectos" class="nav-link">Proyectos</a></button></li>
-                      <li><button type="button" class="btn btn-outline-light"><a href="#contacto" class="nav-link">Contacto</a></button></li>
-                    </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pages/proyectos.html">PROYECTOS Y EXPERIENCIA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pages/educacion.html">HABILIDADES Y EDUCACION</a>
+                    </li>
+                  </ul>
               </div>
               </div>
           <ul class="list-group list-group-horizontal"> 
+            <p>Seguime! Visitá mis redes!</p>
            <li class="list-group-item"><a href="https://github.com/LoreSVi" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li> 
            <li class="list-group-item"><a href="https://www.linkedin.com/in/lorena-vivas-966880a4/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
            <li class="list-group-item"><a href="https://www.instagram.com/lorelolivs/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
             </ul>
 </nav>
-
-<!--Seccion Banner-->
-<div class="presentacion" id="primer-tarjeta">
-  <div id="perfil-fondo"><img src="img/bici-bg.jpg"></div>
-    
-      <div class="info-datos">
-        <div id="info-img">
-          <img class="imagen-perfil" src="img/loreimg-rojocirc.png">
-        </div>
-          <h2>Soy</h2>
-          <h1 class="h1-intro"> Lorena S Vivas </h1>
-    <h3>Desarrolladora FrontEnd</h3>
-  </div>
+</header>
+<!--Seccion Presentacion -->
+<section class="presentacion" id="primer-tarjeta">
+  <div class="grid-container">
+    <div class="grid-item1">
+      <h3>Bienvenidos!</h3>
+      <h5>Soy</h5>
+    <h4> Lorena Vivas</h4>
+      </div>
+    <div class="grid-item2">
+      <div class="imagen-perfil">
+        <img src="img/loreimg-rojocirc.png" alt="Imagen" width="100%" class="imagen-con-forma">
     </div>
-  </header>
+    </div>
+    <div class="grid-item3">
+   <h2>FULL STACK DEVELOPER</h2>
+   </div>
+  </div>
+</section>
+ 
 
 
     <div class="segunda-tarjeta">
@@ -84,9 +87,6 @@
    <!--Sobre mi-->
    <section class="acercaDeMi">
     <div id="sobre-mi" class="Sobre-mi">
-      <h2>Acerca de Mi</h2>
-   <div>
-    <hr>
     <div class="container text-center">
       <div class="row">
           <div class="col">
@@ -99,9 +99,12 @@
             </audio>
           </div> 
         </div>
+
+       
         <div class="col">
+          <h2>Acerca de Mi</h2>
             <p>
-              Soy desarrolladora FrontEnd | | React js. con conocimientos en FullStack y
+              Soy desarrolladora FullStack | | React js. con conocimientos en FullStack y
 capacitándome en Mobile.
 Realice los 2 módulos de Argentina Programa de 12 meses de duración, lo que
 me formo tecnológicamente como FullStack.
@@ -118,7 +121,8 @@ cursos: Desarrollo Web, Java Script y React Js con 7 meses de duración.
           y poder seguir enriqueciendo mi conocimiento como desarrolladora.
         </div>
       </div>
-    </div>    
+    </div> 
+    </div>   
       </section>
 
     </div>
@@ -430,6 +434,7 @@ cursos: Desarrollo Web, Java Script y React Js con 7 meses de duración.
                
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-grey mb-4">Redes</h5>
+                    <p>Seguime! Visitá mis redes!</p>
                     <a href="https://www.instagram.com/lorelolivs/" target="_blank">
                       <img src="https://img.icons8.com/fluency/48/null/instagram-new.png" alt="Ir a nuestro instagram">
                     </a>
@@ -439,10 +444,10 @@ cursos: Desarrollo Web, Java Script y React Js con 7 meses de duración.
                     </div> 
     
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-grey mb-4">Consultas</h5>
+                    <h5 class="text-grey mb-4">Contacto</h5>
                 
                         <!-- MAIL -->
-                  <a href="mailTo:loresuvivas@gmail.com" target="_blank">Enviame mail</a>
+                  <a href="mailTo:loresuvivas@gmail.com" target="_blank">✉ Enviame mail</a>
                     
                 </div>  
             </div>
