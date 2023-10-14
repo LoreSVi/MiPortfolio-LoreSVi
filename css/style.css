@@ -9,6 +9,10 @@ nav a{
 nav a:hover {
   color:black !important;
 }
+
+nav i.fa-brands:hover{
+  color:black;
+}
 .imagen-perfil {
     padding-top: 30px;
     border-radius: 50%;
@@ -109,6 +113,10 @@ i.fa-brands {
 }
 .educacion .card:hover{
   color:deeppink;
+  border-color: deeppink;
+  border-width: 3px;
+}
+.experiencia .card{
   border-color: deeppink;
   border-width: 3px;
 }
@@ -310,15 +318,7 @@ i.fa-brands.fa-angular {
   background-image: url(../img/mirandociudadC.jpg);
   color: aliceblue;
 }
-#experiencia {
-  background-color: rgb(138, 98, 151);
-  padding-bottom: 20px;
-}
-.experiencia .column {
-  border-radius: 8px;
-  width: auto;
-  box-shadow: 0px 0px 3px #000;
-}
+
 
 /*boton ir arriba*/
 #button-up {
