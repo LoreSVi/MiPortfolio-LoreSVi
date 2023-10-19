@@ -13,39 +13,6 @@ nav a:hover {
 nav i.fa-brands:hover{
   color:black;
 }
-.imagen-perfil {
-    padding-top: 30px;
-    border-radius: 50%;
-    width: 172px;
-    height: 172px;
-  }
- 
-  .imagen-con-forma {
-    clip-path: circle(50% at 50% 50%);
-  }
-  
-.imagen-unicornio {
-  width: 200px;
-  position: sticky;
-  top: 20%;
-  left: 10%;
-  animation: rotando 10s linear infinite;
-}
-
-@keyframes rotando {
-  0% {
-    transform: rotate(0deg);
-  }
-  40% {
-    transform: rotate(10deg);
-  }
-  80% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 
 nav {
   background-color: rgb(255, 0, 255);
@@ -72,45 +39,113 @@ i.fa-brands {
   --bs-list-group-border-width: none;
   text-decoration: none;
 }
+     
+.imagen-perfil {
+  padding-top: 30px;
+  border-radius: 50%;
+  width: 192px;
+  height: 192px;
+}
+
+.imagen-con-forma {
+  clip-path: circle(50% at 50% 50%);
+}
+
+.imagen-unicornio {
+width: 200px;
+position: sticky;
+top: 20%;
+left: 10%;
+animation: rotando 10s linear infinite;
+}
+
+@keyframes rotando {
+0% {
+  transform: rotate(0deg);
+}
+40% {
+  transform: rotate(10deg);
+}
+80% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(0deg);
+}
+}
+
+ 
 .presentacion{
-  background-image: url(/img/fond1.jpg);
-  padding: 30px;
+background-color: rgb(169, 107, 228);
+padding: 30px;
 }
 
 
 .presentacion .grid-container {
-  display: grid;
-  grid-template-columns: 1fr 0.5fr 1.5fr;
-  grid-template-rows: 1fr;
-  gap: 8px;
+display: grid;
+grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+grid-template-rows: 1fr;
+gap: 8px;
 }
 
 .grid-item1 {
-  padding: 10px;
-  align-items: center;
-  justify-content: center;
+padding: 40px;
+align-items: center;
+justify-content: center;
 }
 .grid-item2 {
-  padding: 2px;
-  padding-bottom: 20px;
+  padding: 40px;
   align-items: center;
   justify-content: center;
+  }
+.grid-item3 {
+padding: 2px;
+padding-bottom: 20px;
+align-items: center;
+justify-content: center;
 }
 
-.grid-item3 {
- padding-top: 95px;
-  align-items:left;
-  justify-content:end;
+.grid-item4 {
+padding-top: 95px;
+align-items:left;
+justify-content:end;
 }
+
+
+@media (width < 768px) {
+   .grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr
+    }
+    
+  .grid-item1 {
+      flex-direction: column;
+    }
+    .grid-item2{
+      flex-direction: column;
+    }
+    .grid-item3{
+      flex-direction: column;
+    }
+    .grid-item4{
+      flex-direction: column;
+    }
+  }
+  
+
 
 .navegacion-ul {
-  display: flex;
-  gap: 1.9rem;
+display: flex;
+gap: 1.9rem;
 }
 
 .acercaDeMi {
-  padding-top: 30px;
+padding-top: 30px;
 }
+
+
+
+
 .educacion .card:hover{
   color:deeppink;
   border-color: deeppink;
