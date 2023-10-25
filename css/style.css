@@ -39,9 +39,18 @@ i.fa-brands {
   --bs-list-group-border-width: none;
   text-decoration: none;
 }
-     
+.presentacion h1{
+  color:white;
+}
+.presentacion h2{
+  color:white
+}
+.presentacion p{
+  color: white;
+}
 .imagen-perfil {
   padding-top: 30px;
+  padding-left: 30px;
   border-radius: 50%;
   width: 192px;
   height: 192px;
@@ -76,40 +85,35 @@ animation: rotando 10s linear infinite;
 
  
 .presentacion{
-background-color: rgb(169, 107, 228);
+background-color: rgb(230,47,85);
+background: linear-gradient(90deg, rgba(230,47,85,1) 0%, rgba(227,28,127,1) 17%, rgba(171,15,165,1) 35%, rgba(150,78,147,1) 57%, rgba(94,96,187,1) 73%, rgba(0,212,255,1) 100%);
 padding: 30px;
 }
 
 
 .presentacion .grid-container {
 display: grid;
-grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 grid-template-rows: 1fr;
 gap: 8px;
 }
-
 .grid-item1 {
+  padding: 2px;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+  }
+  .grid-item2 {
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    }
+.grid-item3 {
 padding: 40px;
 align-items: center;
 justify-content: center;
 }
-.grid-item2 {
-  padding: 40px;
-  align-items: center;
-  justify-content: center;
-  }
-.grid-item3 {
-padding: 2px;
-padding-bottom: 20px;
-align-items: center;
-justify-content: center;
-}
 
-.grid-item4 {
-padding-top: 95px;
-align-items:left;
-justify-content:end;
-}
 
 
 @media (width < 768px) {
@@ -132,7 +136,10 @@ justify-content:end;
     }
   }
   
-
+audio{
+  width: 100px !important;
+  height: 20px !important;
+}
 
 .navegacion-ul {
 display: flex;
