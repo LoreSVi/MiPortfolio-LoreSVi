@@ -93,9 +93,8 @@ padding: 30px;
 
 .presentacion .grid-container {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr;
-gap: 8px;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 20px;
 }
 .grid-item1 {
   padding: 2px;
@@ -115,24 +114,9 @@ justify-content: center;
 }
 
 
-
-@media (width < 768px) {
-   .grid-container {
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr 1fr 1fr
-    }
-    
-  .grid-item1 {
-      flex-direction: column;
-    }
-    .grid-item2{
-      flex-direction: column;
-    }
-    .grid-item3{
-      flex-direction: column;
-    }
-    .grid-item4{
-      flex-direction: column;
+@media (max-width < 768px) {
+   .presentacion .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
   }
   
@@ -174,13 +158,39 @@ padding-top: 30px;
 }
 .proyectos .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat (2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 8px;
 }
+.grid-itemA{
+  padding: 20px;
+    text-align: center;
+}
+.grid-itemB{
+  padding: 20px;
+    text-align: center;
+}
+.grid-itemC{
+  padding: 20px;
+    text-align: center;
+}
+.grid-itemD{
+  padding: 20px;
+    text-align: center;
+}
+
 .proyectos img {
  width: 30em;
  height: 30em;
+}
+
+.proyectos .card img{
+  width: 35rem;
+}
+@media (max-width:768px) {
+  .proyectos .grid-container {
+   grid-template-columns: repeat (1,1fr);
+   }
 }
 
 i.fa-brands.fa-html5 {
