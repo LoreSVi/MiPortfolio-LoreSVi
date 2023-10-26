@@ -1,3 +1,10 @@
+function reproducirSonido() {
+  var audio = document.getElementById("miAudio");
+  audio.play();
+}
+
+
+
 /*boton up*/
 document.getElementById("button-up").addEventListener("click", scrollUp);
 function scrollUp() {
@@ -7,3 +14,5 @@ function scrollUp() {
     window.scrollTo(0, 0);
   }
 }
+
+
