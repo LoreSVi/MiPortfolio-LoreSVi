@@ -85,7 +85,6 @@ animation: rotando 10s linear infinite;
 
 #uEscribiendo:hover {
   cursor: pointer;
-  width: 250px;
 }
  
 .contenedor-imagen {
@@ -146,10 +145,7 @@ justify-content: center;
     }
   }
   
-audio{
-  width: 100px !important;
-  height: 20px !important;
-}
+
 
 .navegacion-ul {
 display: flex;
@@ -160,6 +156,21 @@ gap: 1.9rem;
 padding-top: 30px;
 }
 
+.imagen-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 10px; 
+  padding: 20px; 
+}
+
+.imagen-item {
+  text-align: center; 
+}
+
+.imagen-item img {
+  max-width: 100%;
+}
 
 
 
