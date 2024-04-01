@@ -49,15 +49,16 @@ i.fa-brands {
   color: white;
 }
 .imagen-perfil {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-left: 30px;
-  border-radius: 50%;
-  width: 192px;
-  height: 192px;
+  border-radius: 80%;
+  width: 300px;
+  height: 300px;
 }
 
 .imagen-con-forma {
   clip-path: circle(50% at 50% 50%);
+  background-color: rgb(75, 53, 77);
 }
 
 #uEscribiendo {
