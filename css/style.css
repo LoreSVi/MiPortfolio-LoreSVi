@@ -33,11 +33,10 @@ i.fa-brands {
   color: white;
 }
 
-
 .list-group {
   --bs-list-group-bg: transparent !important;
-  --bs-list-group-border-width: none;
-  text-decoration: none;
+  --bs-list-group-border-width: none!important;
+  text-decoration: none !important;
 }
 .presentacion h1{
   color:white;
@@ -58,7 +57,7 @@ i.fa-brands {
 
 .imagen-con-forma {
   clip-path: circle(50% at 50% 50%);
-  background-color: rgb(75, 53, 77);
+  background-color:white;
 }
 
 #uEscribiendo {
