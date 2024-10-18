@@ -303,6 +303,7 @@ h2 {
 
   .portfolio-grid {
     grid-template-columns: 1fr; /* Una columna en móviles */
+    margin-left: -4em;
   }
 
   .navbar ul {
