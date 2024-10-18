@@ -2,274 +2,168 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="img/icons8-estrella-16.png" />
-    <title>PortfolioLorenaVivas</title>
+    <meta name="description" content="Portafolio personal de [Tu Nombre]" />
+    <title>Portafolio Personal Lorena S Vivas</title>
 
-    <meta name="description" content="Portfolio Lorena Susana Vivas" />
-    <meta name="author" content="Lorena Susana Vivas" />
-    <meta
-      name="keywords"
-      content="Perfil profesional, curriculum, Lorena Vivas, Lorena Susana Vivas"
-    />
-    <meta name="copyright" content="mi porfolio Lorena Vivas 2022" />
-    <meta name="robots" content="index, follow" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- CSS only -->
+    <!-- Importación de Fuentes de Google -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
     />
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome-->
     <!--Fontawesome-->
     <script
       src="https://kit.fontawesome.com/142ab572f9.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Biblioteca AOS para animaciones -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
-    <!--HEADER-->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <div id="botonera">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/educacion.html">EDUCACION</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/experiencia.html"
-                    >EXPERIENCIA</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/proyectos.html">PROYECTOS</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <ul class="list-group list-group-horizontal">
-            <p>Seguime! Visitá mis redes!</p>
-            <li class="list-group-item">
-              <a href="https://github.com/LoreSVi" target="_blank"
-                ><i class="fa-brands fa-github fa-2xl"></i
-              ></a>
-            </li>
-            <li class="list-group-item">
-              <a
-                href="https://www.linkedin.com/in/lorena-vivas-966880a4/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin fa-2xl"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <div id="container-home" class="container-home">
-      <section class="home">
-        <div class="container">
-          <div class="content">
-            <h2 class="logo">Soy Lore!</h2>
-            <div class="text-home">
-              <h2>Bienvenidido/a! <br /><span>A mi portfolio.</span></h2>
-              <p>
-                <br>
-                Aquí encontrarás una muestra de mi trabajo y pasiones. <br> En
-                cada proyecto que verás, he invertido tiempo y dedicación.<br>
-                 Me apasiona el desafío de encontrar soluciones innovadoras y crear algo único en cada
-                oportunidad.  
-            
-              </p>
-            </div>
-          </div>
-    <!--Seccion Presentacion -->
-    <section class="presentacion" id="primer-tarjeta">
-      <div class="grid-container">
-        <div class="grid-item1">
-          <div class="homeContainer">
-            <div class="homeInfo">
-              <h1>
-              LV
-              </h1>
-              <h2>FrontEnd Developer /Full Stack/ IA con python/ Analista de Datos in progress</h2>
-              <div class="imagen-perfil">
-                <img
-                  src="img/fotoLinkdin.jpeg"
-                  alt="Imagen"
-                  width="100%"
-                  class="imagen-con-forma"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid-item2">
-          <h2>Sobre mí</h2>
-          <p>
-            Hola! Soy Desarrolladora web, Programadora Fullstack jr, con conocimiento en IA con python y futura Analista de datos.
-Actualmente me encuentro haciendo la capacitación en Análisis de datos ,para fin de noviembre tendré la titulación en dicha área del conocimiento.
- Sin embargo ya poseo algunas experiencias laborales realizando tareas relativas a ello, domino excel, bases de datos, lenguaje SQL, migración de excel a bases de datos y la elaboración de reportes de análisis de los datos obtenidos.
-
-          </p>
-
-          <div class="contenedor-imagen">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <h1>
+          <a href="#">
             <img
-              src="img/unicornio.gif"
-              id="uEscribiendo"
-              onclick="reproducirSonido()"
+              src="assets/LinkdinFoto1.jpeg"
+              alt="Foto de Lorena Susana Vivas"
+              class="nav-photo"
             />
-            <audio id="miAudio" src="/audio/el-teclado_3.mp3"></audio>
-            <div class="texto-oculto">Tocá acá para escuchar</div>
+            Lorena Susana Vivas
+          </a>
+        </h1>
+        <ul>
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Hola, soy <span>Lore</span></h1>
+        <p>Desarrolladora Web y Analista de Datos en progreso</p>
+        <a href="#portfolio" class="btn">Ver mi trabajo</a>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="about" class="about" data-aos="fade-left">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy una desarrolladora web con pasión por crear sitios creativos y
+          funcionales. Con experiencia en tecnologías modernas como HTML, CSS,
+          JavaScript, React, y más. Actualmente me estoy capacitando en Analisis
+          de Datos que concluyo fin de Noviembre,aunque ya tengo experiencias
+          realizando trabajos con SQL, excel,armado de reportes, presentaciones
+          visuales. También tengo algunos conomientos en AI con python los
+          cuáles voy a seguir profundinzando. Me encanta el aprendizaje
+          constante y la tecnología.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portfolio" class="portfolio" data-aos="fade-right">
+      <div class="container">
+        <h2>Portafolio</h2>
+        <div class="portfolio-grid">
+          <!-- Tarjetas del portafolio -->
+          <div class="portfolio-item" data-aos="zoom-in">
+            <img src="assets/proyecto1.jpg" alt="Proyecto 1" />
+            <div class="portfolio-info">
+              <h3>Proyecto 1</h3>
+              <p>Descripción breve del proyecto</p>
+            </div>
           </div>
-        </div>
-        <div class="grid-item3">
-          <div class="aboutData">
-            <p class="aboutDescription">
-              Mi objetivo al concluir la capacitación es ofrecer mis servicios para la toma de decisiones basadas en datos, junto con la automatización de procesos brindando un plus extra a mi perfil, que es el de desarrolladora FullStack especializada en datos e IA, y así poder enriquecer algún proyecto innovador.
-Mis carreras base anteriores son, docente y técnica auxiliar en bibliotecología me brindaron amplia experiencia en organización, comunicación efectiva, trabajo en equipo y liderazgo.
-Me encantan los desafíos y la capacitación constante.
-            </p>
-            <button class="button">
-              <a href="documentos/L_S_VivasFullStack.pdf" target="_blank"
-                >Descargar CV</a
-              >
-            </button>
-            <br />
-            <div class="contacto">
-              <a href="mailTo:loresuvivas@gmail.com" target="_blank"
-                ><img src="img/mail_23797.png"
-              /></a>
-              <a
-                href="https://api.whatsapp.com/send/?phone=34642553628"
-                target="_blank"
-                ><img src="img/whatsapp_logo_icon_147205.png"
-              /></a>
+
+          <div class="portfolio-item" data-aos="zoom-in">
+            <img src="assets/proyecto2.jpg" alt="Proyecto 2" />
+            <div class="portfolio-info">
+              <h3>Proyecto 2</h3>
+              <p>Descripción breve del proyecto</p>
+            </div>
+          </div>
+
+          <div class="portfolio-item" data-aos="zoom-in">
+            <img src="assets/proyecto3.jpg" alt="Proyecto 3" />
+            <div class="portfolio-info">
+              <h3>Proyecto 3</h3>
+              <p>Descripción breve del proyecto</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--Seccion Habilidades-->
-    <section class="Habilidades" id="Habilidades">
-      <h2>Skills</h2>
-      <hr />
-      <div class="contenedor-habilidades">
-        <div class="imagen-grid">
-          <div class="imagen-item">
-            <img src="img/html-5.png" alt="Imagen 1" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/css-3.png" alt="Imagen 2" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/js.png" alt="Imagen 3" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/react.png" alt="Imagen 4" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/bootstrap.png" alt="Imagen 5" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/sass.png" alt="Imagen 6" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/firebase.png" alt="Imagen 7" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/nodejs.png" alt="Imagen 8" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/sql.png" alt="sql" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/worbench.png" alt="MysqlWorbench" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/vercel.png" alt="vercel" />
-          </div>
-          <div class="imagen-item">
-            <img src="img/cloudinary.png" alt="cloudinary" />
-          </div>
-        </div>
+    <!-- Contacto -->
+    <section id="contact" class="contact" data-aos="fade-up">
+      <div class="container">
+        <h2 class="title-background">Contacto</h2>
+        <form id="contact-form">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Tu Nombre"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Tu Email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Mensaje"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
       </div>
     </section>
 
-    <!--Sección vuelve al comienzo-->
-    <div id="button-up">
-      <i class="fas fa-chevron-up"></i>
-    </div>
-    <!--Sección Footer-->
-
-    <footer>
-      <div class="container-fluid">
-        <div class="container py-5">
-          <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-              <h5 class="text-grey mb-4">CABA, Argentina</h5>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <h5 class="text-grey mb-4">Redes</h5>
-              <p>Seguime! Visitá mis redes!</p>
-              <a
-                href="https://www.linkedin.com/in/lorena-susana-vivas/"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin fa-2xl"></i
-              ></a>
-
-              <a href="https://github.com/LoreSVi" target="_blank"
-                ><i class="fa-brands fa-github fa-2xl"></i
-              ></a>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-              <h5 class="text-grey mb-4">Contacto</h5>
-
-              <!-- MAIL -->
-              <a href="mailTo:loresuvivas@gmail.com" target="_blank"
-                >💻 ESCRIBIME</a
-              >
-            </div>
-          </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Lorena Susana Vivas. Todos los derechos reservados.</p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/lorena-susana-vivas/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/LoreSVi"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github fa-2xl"></i>
+          </a>
+          <a href="mailTo:loresuvivas@gmail.com" target="_blank">✉ Gmail</a>
         </div>
       </div>
     </footer>
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="./main.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
   </body>
 </html>
