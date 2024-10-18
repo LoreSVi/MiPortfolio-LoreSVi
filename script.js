@@ -21,20 +21,42 @@ ScrollReveal().reveal(".portfolio-item", {
   interval: 200,
 });
 
-// Formulario de contacto con validación básica
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (e) {
-    e.preventDefault();
+//formulario contacto
+// Inicializa EmailJS con tu User ID
+(function () {
+  emailjs.init("Tservice_GmailSend"); // Reemplaza TU_USER_ID con tu ID de usuario
+})();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    if (name === "" || email === "" || message === "") {
-      alert("Por favor, rellena todos los campos.");
-    } else {
-      alert("¡Gracias por contactarme! Te responderé lo antes posible.");
-      // Aquí puedes integrar una API o enviar el formulario
-    }
-  });
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      if (name === "" || email === "" || message === "") {
+        alert("Por favor, rellena todos los campos.");
+      } else {
+        const templateParams = {
+          from_name: name,
+          from_email: email,
+          message: message,
+        };
+
+        emailjs.send("TU_SERVICIO", "TU_TEMPLATE", templateParams).then(
+          function (response) {
+            alert("¡Gracias por contactarme! Te responderé lo antes posible.");
+          },
+          function (error) {
+            alert("Error al enviar el correo: " + JSON.stringify(error));
+          }
+        );
+
+        // Limpiar el formulario
+        document.getElementById("contact-form").reset();
+      }
+    });
+});

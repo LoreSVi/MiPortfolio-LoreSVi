@@ -285,10 +285,12 @@ h2 {
     padding-bottom: 1.5em;
     padding-bottom: -5em;
     margin-top: -5em;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   .hero::before {
     width: 400px;
     height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .hero h1 {
