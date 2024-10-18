@@ -28,6 +28,24 @@ nav {
   }
 }
 
+/*text home*/
+.text-home h2 {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.text-home h2 span {
+  font-size: 30px;
+}
+
+
+.text-home p {
+  font-size: 20px;
+  text-align: justify;
+  font-weight: lighter;
+}
+
 
 i.fa-brands {
   color: white;
@@ -50,9 +68,9 @@ i.fa-brands {
 .imagen-perfil {
   padding-top: 20px;
   padding-left: 30px;
-  border-radius: 80%;
-  width: 300px;
-  height: 300px;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
 }
 
 .imagen-con-forma {
@@ -401,6 +419,7 @@ i.fa-brands.fa-angular {
   border-color: rgba(0, 0, 0, 0.1);
 }
 
+/*footer*/
 footer {
   border-top: 2px solid grey;
   margin-top: 2px;
