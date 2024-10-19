@@ -2,11 +2,6 @@
 AOS.init();
 
 // ScrollReveal Animations
-ScrollReveal().reveal(".hero-content", {
-  duration: 2000,
-  origin: "bottom",
-  distance: "50px",
-});
 
 ScrollReveal().reveal(".about", {
   duration: 2000,

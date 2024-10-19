@@ -25,6 +25,11 @@
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
       rel="stylesheet"
     />
+       <!-- animate -->
+       <link
+       rel="stylesheet"
+       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+     />
   </head>
   <body>
     <!-- Navbar -->
@@ -51,8 +56,15 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
       <div class="hero-content" data-aos="fade-up">
-        <h1>Hola, soy <span>Lore</span></h1>
-        <p>Desarrolladora Web y Analista de Datos en progreso</p>
+        <div class="animacTit">
+          <div class="resaltadoNegro">
+          <h1 class="animate__animated animate__backInLeft"
+            id="titulo-actividades"
+          >
+          Hola! soy <span>Lore</span></h1>
+        </div>
+      </div>
+        <p class="resaltadoNegro">Desarrolladora Web y Analista de Datos en progreso</p><br><br>
         <a href="#portfolio" class="btn">Ver mi trabajo</a>
       </div>
     </section>
@@ -154,7 +166,7 @@
     <!-- Contacto -->
     <section id="contact" class="contact" data-aos="fade-up">
       <div class="container">
-        <h2 class="title-background">Contacto</h2>
+        <h2 >Contacto</h2>
         <form id="contact-form">
           <input
             type="text"
