@@ -16,6 +16,11 @@ ScrollReveal().reveal(".portfolio-item", {
   interval: 200,
 });
 
+//menu hamburguesa
+document.querySelector(".menu-toggle").addEventListener("click", function () {
+  document.querySelector(".navbar ul").classList.toggle("active");
+});
+
 //formulario contacto
 // Inicializa EmailJS con tu User ID
 (function () {

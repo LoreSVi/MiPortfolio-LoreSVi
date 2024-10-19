@@ -68,7 +68,45 @@ h2 {
 }
 
 .navbar ul li a:hover {
-  color:  #f2668b;
+  color: #f2668b;
+}
+
+/* Estilos para pantallas pequeñas */
+.menu-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
 }
 
 /* Hero Section */
@@ -111,7 +149,7 @@ h2 {
   color: #f788a6;
 }
 
-.resaltadoNegro{
+.resaltadoNegro {
   display: inline-block;
   padding: 0px 6px;
   background-color: black;
@@ -189,11 +227,11 @@ h2 {
   padding: 100px 0;
   display: flex;
 }
-.contact h2{
+.contact h2 {
   padding-bottom: 2em;
 }
 .title-background {
- background-color: #fff; /* Color de fondo */
+  background-color: #fff; /* Color de fondo */
   color: #333; /* Color del texto */
   padding: 15px 15px; /* Espaciado interno */
   border-radius: 5px; /* Bordes redondeados */
